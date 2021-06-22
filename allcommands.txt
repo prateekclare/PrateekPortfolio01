@@ -1,0 +1,57 @@
+from flask import Flask,render_template
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('home.html')
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+py -m venv venv
+venv\Scripts\activate
+virtual\Scripts\activate
+
+pip install flask
+pip install flask-wtf
+pip install python-dotenv
+pip install flask-mongoengine
+# virtual\Scripts\python app\main.py
+deactivate
+
+pip freeze > requirements.txt
+
+Upload to Heroku
+
+
+
+# heroku login
+venv\Scripts\pip install gunicorn
+# virtual\Scripts\pip install gunicorn
+
+# virtual\Scripts\pip freeze > requirements.txt
+
+# virtual\Scripts\python --version
+
+# git config --global user.email “prateekclaregd@gmail.com”
+# git config --global user.name "prateekclare"
+# git init
+# git add .
+# git commit –m “First commitw”
+# heroku create portfolioprateek01aa
+# git push heroku master
+heroku ps:scale web=1
+
+
+Maintaining your Python web app
+heroku login
+git add .
+git commit -m "Change the about page"
+git push heroku master
+heroku open
+
+git commit -m "second commit"
+git branch -M main
+
+

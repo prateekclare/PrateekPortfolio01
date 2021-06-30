@@ -1,0 +1,13 @@
+.shadow1{
+    box-shadow: 3px 0px 5px black, 8px 0px 130px rgba(0, 0, 0, 0.319) inset, 0px 0px 20px rgba(0, 0, 0, 0.411) inset;
+}
+
+.containerMain {
+    background-color: rgba(255, 255, 255, 0.829);
+    backdrop-filter: blur(3px);
+    padding-left: 2%;
+
+    padding: 4%;
+    box-shadow: 3px 0px 5px black, 8px 0px 130px rgba(138, 138, 138, 0.319) inset, 0px 0px 20px rgba(226, 226, 226, 0.411) inset;
+    border-radius: 15px 50px;
+}

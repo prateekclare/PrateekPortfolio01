@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .shadow1{
     box-shadow: 3px 0px 5px black, 8px 0px 130px rgba(0, 0, 0, 0.319) inset, 0px 0px 20px rgba(0, 0, 0, 0.411) inset;
 }
@@ -14,3 +17,15 @@
     box-shadow: 3px 0px 5px black, 8px 0px 130px rgba(138, 138, 138, 0.319) inset, 0px 0px 20px rgba(226, 226, 226, 0.411) inset;
     border-radius: 15px 50px;
 }
+
+.sh1 {
+    box-shadow: 12px 6px 23px black;
+    backdrop-filter: blur(5px);
+    background-color: rgba(59, 170, 59, 0.151);
+
+  }
+
+  
+.paci_font{
+    font-family: 'Pacifico', cursive;
+  }

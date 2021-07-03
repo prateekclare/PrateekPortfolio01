@@ -43,7 +43,7 @@ venv\Scripts\pip install gunicorn
 # git push heroku master
 heroku ps:scale web=1
 
-
+D:\CompLungs\Python\PyProjects\FlaskPy\sample_uploadII
 Maintaining your Python web app
 heroku login
 git add .

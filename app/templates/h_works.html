@@ -1,326 +1,296 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>No Future with Pollution</title>
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
-    </script>
 
-  <!-- Custom CSS-->
-  <link rel="stylesheet" href="../static/css/clouds_styles.css" />
-  <link rel="stylesheet" href="../static/css/ihover.css" />
-  <link rel="stylesheet" href="../static/css/izmir.min.css">
-  <link rel="stylesheet" href="../static/css/navHead.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!------ Include the above in your HEAD tag ---------->
 
-  <!-- Animation On Scroll -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
-
-
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
-      background-blend-mode: difference;
-
-      float: left;
+      margin-top: 60px;
+      font-family: 'Montserrat', sans-serif;
     }
 
-    .background_Image {
-      position: relative;
-      height: 100vh;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-image: url(https://scitechdaily.com/images/NASAs-MAVEN-Reveals-Most-of-Mars-Atmosphere-Was-Lost-to-Space.jpg);
-      background-size: cover;
+    /* this is just for the demo */
+
+
+
+
+
+    .panel-heading:hover {
+      cursor: pointer;
     }
 
-    .background_Image::before {
-      content: "";
-      position: absolute;
-      opacity: 0.2;
+    .panel-heading {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
 
-
-    .container12 {
-      /* width: 30rem;
-      height: 20rem; */
-      box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-      border-radius: 5px;
-      background-color: rgba(255, 255, 255, 0.479);
-
-      backdrop-filter: blur(5px);
+    .side-tab:hover {
+      cursor: pointer;
     }
- 
-    .shadow1{
-            box-shadow: 3px 0px 5px black, 8px 0px 30px rgba(0, 0, 0, 0.319) inset, 0px 0px 20px rgba(112, 109, 109, 0.411) inset;
-        }
-  </style>
 
-  <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="logo/Green logo.png" />
-  <!-- ---------------------------------------------------------- -->
-</head>
-<!-- ******************* ******************************** ****************************** *************************** -->
+    .panel.panel-default {
+      border: none;
+      box-shadow: none !important;
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
 
-<body>
+    }
 
-  <!--Navigation Bar Section-->
-  <div class="d-flex justify-content-center">
-  <header class="col-12 shadow1">
-    <a href="#" class="logo"><img src="images/lets charge logo.png" alt="Lets Charge Logo" width="100px"
-        height="90px"></a>
-    <div class="menu-toggle"></div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutUs.html">About Us</a></li>
-        <li><a href="business.html">Business Plan</a></li>
-        <li><a href="missionGoal.html">Vision & Goal</a></li>
-        <li><a href="pollution_free.html" class="active">Clean Environment</a></li>
-      </ul>
-    </nav>
-    <div class="clearfix"></div>
-  </header>
+    .panel-heading {
+      border: none;
+      background-color: #eee;
 
+    }
 
+    .panel-body {
+      background-color: #f5f5f5;
+    }
 
-</div>
-  <div id="slider">
-    <figure>
-      <img alt="" src="images/pollution-free/race_cars_drift_smoke.jpg" />
-      <img alt="" src="images/pollution-free/car-smoke.jpg" />
-      <img alt="" src="Images/pollution-free/f813080b07496e460f9709ab33f0173d.jpg" />
-      <img alt="" src="Images/pollution-free/ontario-petro-canada.jpg" />
-      <img alt="" src="Images/Untitled-2.jpg" />
-    </figure>
-  </div>
-  <div class="text-center pb-5">
-    <h1 style="font-family: 'Reggae One', cursive">
-      Our Future demands a Pollution Free world !!
-    </h1>
-  </div>
-  <div class="bannerHM">
-    <div class="clouds">
-      <img src="Images/clouds/cloud1-min.png" style="--i: 1" />
-      <img src="Images/clouds/cloud1-min.png" style="--i: 2" />
-      <img src="Images/clouds/cloud1-min.png" style="--i: 3" />
-      <img src="Images/clouds/cloud1-min.png" style="--i: 4" />
-      <img src="Images/clouds/cloud1-min.png" style="--i: 5" />
-      <img src="Images/clouds/teslapng.png" style="--i: 3" style="width: 10%;" />
-    </div>
-  </div>
+    .panel-title {
+      font-weight: 400;
+      color: white;
+    }
 
-
-  <div
-    style="background-image: url(https://s11.favim.com/orig/7/725/7255/72557/transparent-background-gif-transparent-Favim.com-7255762.gif);">
-    <center>
-      <!-- Bottom to top-->
-      <div class="ih-item circle colored effect3 bottom_to_top mb-3"><a href="#">
-          <div class="img"><img src="images/pollution-free/greenL_300x300.png" alt="img"></div>
-          <div class="info">
-            <h3>Charge It</h3>
-            <p>Electricity is the cleanest source of energy</p>
-          </div>
-        </a></div>
-    </center>
-
-    <!-- <div class="text-center">
-    <h1 style="font-family: 'Reggae One', cursive">
-      Our Future demands a Pollution Free world !!
-    </h1> -->
-    <!-- ********************* ************************** *************************************** *************************** -->
-
-
-    <br>
-
-    <div class="container">
-      <div class="col-item" style="width: 40%;" data-aos="fade-right" data-aos-easing="ease-in-sine"
-        data-aos-duration="2000">
-        <figure class="c4-izmir c4-border-cc-3 c4-image-zoom-in c4-gradient-bottom-right" tabindex="0"
-          style="--primary-color: #7303c0; --secondary-color: #000000;">
-          <img src="images/ontario-petro-canada.jpg" alt="Sample Image">
-          <figcaption>
-            <div class="c4-rotate-up-right c4-delay-200">
-              <h2>
-                Endless
-              </h2>
-            </div>
-            <div class="c4-rotate-down-left c4-delay-200">
-              <h2>
-                Possibilities
-              </h2>
-              <br>
-              <p>
-                We can regenerate electricity but not the fossil fuels (Diesel, Petrol, etc..)
-              </p>
-            </div>
-          </figcaption>
-        </figure>
-
-      </div>
-
-
-      <div class="col-item float-right m-2" data-aos="fade-left" data-aos-duration="2500">
-        <figure class="c4-izmir c4-border-cc-3 c4-image-zoom-out c4-gradient-bottom-right" tabindex="0"
-          style="--primary-color: #40bf5cbb; --secondary-color: #300000;">
-          <img
-            src="https://static.straitstimes.com.sg/s3fs-public/styles/article_pictrure_780x520_/public/articles/2021/02/14/rk_electric-cars_140221.jpg?itok=h0edK4V0&timestamp=1613315646"
-            alt="Sample Image">
-          <figcaption>
-            <div class="c4-rotate-up-right c4-delay-200">
-              <h2>
-                What we are leaving
-              </h2>
-            </div>
-            <div class="c4-rotate-down-left c4-delay-200">
-              <h2>
-                for our future generations?
-              </h2>
-              <br>
-              <p>
-                Dinasours left us with a clean earth and abundent supply of fuels.
-                <p>But we are going to leave only a baren land.</p>
-              </p>
-            </div>
-          </figcaption>
-        </figure>
-      </div>
-
-    </div>
-
-
-    <div class="container pt-4 pb-2" style="margin-top: 10%; margin-bottom: 20%; font-size: 1.5vw;">
-     Electric vehicles can play a vital role in keeping the enviroment clean.
-     Keeping and maintaining electric automobiles is much cheaper than exploiting the natural resourses.
-    </div>
-  </div>
-  <hr class="col-4 d-block">
-  <hr class="col-8 d-block">
-
-
-  <!-- !!!!!!!!!!!!!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-  <div class="p-4 background_Image">
-
-    <div class="container12" data-aos="zoom-in" data-aos-duration="1300">
-      <div class="m-4 justify-content-center" style="font-size: 1.3vw;">
-        Let's make earth a better place to live. <br>So that we are not spending trillions in making Mars fit for humans.
-        
-      </div>
-    </div>
-  </div>
-  <br>
-  <!-- <div class="p-4 m-4" style="width: 40%;">
-    <div class="c4-izmir img-hover-zoom--slowmo c4-gradient-bottom-right container"
-      style="--primary-color: #ff000018; --secondary-color: #000000;">
-      <img src="https://electricautonomy.ca/wp-content/uploads/2019/06/Petro-Canadas-EV-fast-chargers.jpg" alt="">
-      <p style="position: relative; z-index: 100;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi alias quia facilis ducimus? Unde, quam
-        accusamus non officiis officia enim possimus temporibus! Quia dicta quaerat atque quas animi saepe illum.</p>
-    </div>
-
-  </div> -->
-
-<!-- Footer -->
-<footer>
-  <div class="container">
-    <div class="sec about">
-      <h2>About Us</h2>
-      <p>
-        
-        Electric cars are useful only if we can charge them. 
-        We have the solution to this problem, collaborating with the companies for
-        creating charging stations.
-      
-      </p>
-      <ul class="social-media-links">
-        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
-        <li><a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a></li>
-        <li><a href="https://instagram.com/"><i class="fab fa-instagram-square"></i></a></li>
-        <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
-      </ul>
-    </div>
-    <div class="sec contact">
-      <h2>Contact Info</h2>
-      <ul class="info">
-        <li>
-          <span><i class="fas fa-map-marker-alt"></i></span>
-          <span>842 Rogerson Road<br>
-            L5V 3A8 ON, Mississauga,<br>
-            Canada</span>
-        </li>
-        <li>
-          <span><i class="fas fa-phone-square"></i></span>
-          <p>
-            <a href="tel:15101234567">+1(647)1234567</a><br>
-            <a href="tel:16471234567">+1(647)1234567</a>
-          </p>
-        </li>
-        <li>
-          <span><i class="fas fa-envelope-open-text"></i></span>
-          <p><a href="mailto:letscharge@gmail.com">letscharge@gmail.com</a></p>
-        </li>
-      </ul>
-    </div>
-    <div class="sec quicklinks">
-      <h2>Quick Links</h2>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-      <li><a href="aboutUs.html">About Us</a></li>
-      <li><a href="business.html">Business Plan</a></li>
-      <li><a href="missionGoal.html">Vision & Goal</a></li>
-      <li><a href="pollution_free.html" class="active">Clean Environment</a></li>
+    /*----------------------------------
+    Macbook pro mockup from:
+    http://jaredhardy.com/minimal-devices/
     
-      </ul>
-    </div>
+----------------------------------*/
+
+    .md-macbook-pro {
+      display: block;
+      width: 55.3125em;
+      height: 31.875em;
+      font-size: 13px;
+      margin: 0 auto;
+
+      @media (max-width:1199px) {
+        font-size: 11px;
+      }
+
+      @media (max-width:1024px) {
+        font-size: 10px;
+      }
+
+      @media (max-width:767px) {
+        font-size: 7px;
+      }
+
+      @media (max-width:320px) {
+        font-size: 5px;
+      }
+
+    }
+
+    .md-macbook-pro .md-lid {
+      width: 45em;
+      height: 30.625em;
+      overflow: hidden;
+      margin: 0 auto;
+      position: relative;
+      border-radius: 1.875em;
+      border: solid 0.1875em #cdced1;
+      background: #131313;
+    }
+
+    .md-macbook-pro .md-camera {
+      width: 0.375em;
+      height: 0.375em;
+      margin: 0 auto;
+      position: relative;
+      top: 1.0625em;
+      background: #000;
+      border-radius: 100%;
+      box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25);
+    }
+
+    .md-macbook-pro .md-camera:after {
+      content: "";
+      display: block;
+      width: 0.125em;
+      height: 0.125em;
+      position: absolute;
+      left: 0.125em;
+      top: 0.0625em;
+      background: #353542;
+      border-radius: 100%;
+    }
+
+    .md-macbook-pro .md-screen {
+      width: 42.25em;
+      height: 26.375em;
+      margin: 0 auto;
+      position: relative;
+      top: 2.0625em;
+      /* // background: #1d1d1d; */
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .md-macbook-pro .md-screen img {
+      width: 100%;
+    }
+
+    .md-macbook-pro .md-base {
+      width: 100%;
+      height: 0.9375em;
+      position: relative;
+      top: -0.75em;
+      background: #c6c7ca;
+    }
+
+    .md-macbook-pro .md-base:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 0.5em;
+      margin: 0 auto;
+      position: relative;
+      bottom: -0.1875em;
+      background: #b9babe;
+      border-radius: 0 0 1.25em 1.25em;
+    }
+
+    .md-macbook-pro .md-base:before {
+      content: "";
+      display: block;
+      width: 7.6875em;
+      height: 0.625em;
+      margin: 0 auto;
+      position: relative;
+      background: #a6a8ad;
+      border-radius: 0 0 0.625em 0.625em;
+    }
+
+    .md-macbook-pro.md-glare .md-lid:after {
+      content: "";
+      display: block;
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 0 1.25em 0 0;
+      background: -webkit-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+      background: -moz-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+      background: -o-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+      background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+    }
+  </style>
+</head>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <!-- begin panel group -->
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+        <!-- panel 1 -->
+        <div class="panel panel-default">
+          <!--wrap panel heading in span to trigger image change as well as collapse -->
+          <span class="side-tab" data-target="#tab1" data-toggle="tab" role="tab" aria-expanded="false">
+            <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion"
+              href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h4 class="panel-title">She Sells Seashells</h4>
+            </div>
+          </span>
+
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <!-- Tab content goes here -->
+              That fall, as Nadia and Masha got shipped off to prison camps in Siberia, South Brooklyn tried to recover
+              from the storm. My dad and I spent a lot of time in the same apartment engrossed in separate laptops,
+              separate internet missives. He followed Russian news bloggers closely and would update me on troubling
+              developments. A rise in protofascist nationalism
+            </div>
+          </div>
+        </div>
+        <!-- / panel 1 -->
+
+        <!-- panel 2 -->
+        <div class="panel panel-default">
+          <!--wrap panel heading in span to trigger image change as well as collapse -->
+          <span class="side-tab" data-target="#tab2" data-toggle="tab" role="tab" aria-expanded="false">
+            <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion"
+              href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h4 class="panel-title collapsed">TAB 2</h4>
+            </div>
+          </span>
+
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              <!-- Tab content goes here -->
+              tab 2 content
+            </div>
+          </div>
+        </div>
+        <!-- / panel 2 -->
+
+        <!--  panel 3 -->
+        <div class="panel panel-default">
+          <!--wrap panel heading in span to trigger image change as well as collapse -->
+          <span class="side-tab" data-target="#tab3" data-toggle="tab" role="tab" aria-expanded="false">
+            <div class="panel-heading" role="tab" id="headingThree" class="collapsed" data-toggle="collapse"
+              data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h4 class="panel-title">TAB 3 </h4>
+            </div>
+          </span>
+
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              <!-- tab content goes here -->
+              tab 3 content
+            </div>
+          </div>
+        </div>
+      </div> <!-- / panel-group -->
+
+    </div> <!-- /col-md-4 -->
+
+    <div class="col-md-8">
+      <!-- begin macbook pro mockup -->
+      <div class="md-macbook-pro md-glare">
+        <div class="md-lid">
+          <div class="md-camera"></div>
+          <div class="md-screen">
+            <!-- content goes here -->
+            <div class="tab-featured-image">
+              <div class="tab-content">
+                <div class="tab-pane  in active" id="tab1">
+                  <img
+                    src="https://ununsplash.imgix.net/photo-1417024321782-1375735f8987?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950"
+                    alt="tab1" class="img img-responsive">
+                </div>
+                <div class="tab-pane " id="tab2">
+
+                  <img
+                    src="https://unsplash.imgix.net/uploads/1411724908903377d4696/2e9b0cb2?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950">
+
+                </div>
+                <div class="tab-pane fade" id="tab3">
+
+                  <img
+                    src="https://ununsplash.imgix.net/photo-1422479516648-9b1f0b6e8da8?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950"
+                    alt="tab1" class="img img-responsive">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md-base"></div>
+      </div> <!-- end macbook pro mockup -->
+
+
+
+    </div> <!-- / .col-md-8 -->
   </div>
-  <div class="copyright">
-    <p> Milan-Prateek-Vasu Group | College Competation Ⓒ 2021 </p>
-  </div>
-</footer>
-
-<!-- Footer -->
-
-<script src="https://kit.fontawesome.com/21dbfbda9f.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-crossorigin="anonymous"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-  $('.menu-toggle').click(function () {
-    $('.menu-toggle').toggleClass('active')
-    $('nav').toggleClass('active')
-  })
-})
-</script>
-  <!-- ++++++++++++++ Animation On Scroll +++++++++++++ -->
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <!-- ++++++++++++++ End Animation On Scroll +++++++++++++ -->
-
-</body>
-
-</html>
+  <!--/ .row -->
+</div> <!-- end sidetab container -->

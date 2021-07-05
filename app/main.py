@@ -17,7 +17,6 @@ def hire():
 def about():
     return render_template('h_aboutme.html')
 
-
 if __name__ == '__main__':
     app.run(debug=True)
 

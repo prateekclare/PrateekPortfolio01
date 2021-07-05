@@ -95,7 +95,7 @@
 .overlay a:hover,
 .overlay a:focus {
   color: #6e6e6e;
-  text-decoration: overline;
+  text-decoration: double;
 }
 
 .overlay .closebtn {

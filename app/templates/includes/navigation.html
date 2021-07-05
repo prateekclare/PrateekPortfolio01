@@ -3,10 +3,9 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
- 
+
   <!-- Navbar -->
   <link rel="stylesheet" href="../../static/css/navbar.css">
-
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -14,30 +13,34 @@
 </head>
 
 <body>
-
-
   <div id="navbar">
     <!-- <a href="#default" id="logo"><img src="../static/images/pcp3dlogo.png" width="49vw" alt=""></a> -->
 
     <a href="#default" class="nav-name paci_font">Prateek's Portfolio Website</a>
-    <div class="navbar-right paci_font">
-     
-      <span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
-      <span style="font-size:30px;cursor:pointer;color:transparent;">&#9776;</span>
+    <div class="navbar-right paci_font m-2 mr-4">
+
+      <div style="font-size:30px;cursor:pointer;color:white; vertical-align: -webkit-baseline-middle;" onclick="openNav()">&#9776;</div>
     </div>
   </div>
 
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content paci_font">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+    <div class="overlay-content">
+      <div class="paci_font">
+        <a href="{{url_for('works') }}">My Works</a>
+        <a href="{{url_for('home') }}">Homepage</a>
+        <a href="{{url_for('hire') }}">Contact</a>
+        <a href="{{url_for('about') }}">About</a>
+      </div>
+
+      <a href="#default" class="mt-2">
+        <img src="../../static/images/pcp1logo.png" width="80vw" alt=""> |
+        <img src="../static/images/pcp3dlogo.png" width="90vw" alt="">
+        <div class="small_font">PcP Graphics © 2021</div>
+      </a>
     </div>
   </div>
 
-  
 
   <script>
     function openNav() {

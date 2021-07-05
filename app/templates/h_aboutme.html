@@ -1,0 +1,90 @@
+<head>
+    <!-- Timelinne -->
+    <link rel="stylesheet" href="../static/css/timeline.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css'>
+    <script src='https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js'></script>
+    <!--  -->
+
+</head>
+{% extends "layout.html" %}
+
+{% block content %}
+<br>
+<!-- partial:index.partial.html -->
+<div class="uk-container uk-padding">
+    <div>
+        <h1>
+            Educational Background
+        </h1>
+        <br>
+    </div>
+    <div class="uk-timeline">
+        <div class="uk-timeline-item">
+            <div class="uk-timeline-icon">
+                <span class="uk-badge"><span uk-icon="check"></span></span>
+            </div>
+            <div class="uk-timeline-content">
+                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <h3 class="uk-card-title"><time datetime="2020-07-08">2017</time></h3>
+                            <span class="uk-label uk-label-success uk-margin-auto-left">Matrix</span>
+                        </div>
+                    </div>
+                    <div class="uk-card-body">
+                        <p class="uk-text-success">Fully responsive timeline you can add to your UIkit 3 project
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-timeline-item">
+            <div class="uk-timeline-icon">
+                <span class="uk-badge">
+                    <span uk-icon="" class="bi bi-journal-check">
+
+                    </span></span>
+            </div>
+            <div class="uk-timeline-content">
+                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <h3 class="uk-card-title"><time datetime="2020-07-07">2019</time></h3>
+                            <span class="uk-label uk-label-warning uk-margin-auto-left">Senior Secondary</span>
+                        </div>
+                    </div>
+                    <div class="uk-card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </p>
+                     
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-timeline-item">
+            <div class="uk-timeline-icon">
+                <span class="uk-badge"><span uk-icon="" class="bi bi-award"></span></span>
+            </div>
+            <div class="uk-timeline-content">
+                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <h3 class="uk-card-title"><time datetime="2020-07-06">2021</time></h3>
+                            <span class="uk-label uk-label-danger uk-margin-auto-left">College Diploma</span>
+                        </div>
+                    </div>
+                    <div class="uk-card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </p>
+                    </div>
+                </div>
+                <!-- <a href="#"><span class="uk-margin-small-right" uk-icon="triangle-down"></span>Load more</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

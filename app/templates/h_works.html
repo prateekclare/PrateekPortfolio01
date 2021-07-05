@@ -1,152 +1,11 @@
-<!DOCTYPE html>
-<html>
-
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-
-  <!-- >> on Scroll Zoom -->
-  <link rel="stylesheet" href="../static/css/header_zoomS.css">
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-  <script src="../static/js/header_zoomSJ.js"></script>
-
-  <!-- Navbar -->
-  <link rel="stylesheet" href="../static/css/navbar.css">
 
   <!-- Favicoon -->
   <link rel="shortcut icon" href="../static/images/pcp1logo.png" type="image/png">
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-  <!-- Animation On Scroll -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-  <!-- Js Links -->
-  <script src="../static/js/writtingeffect.js"></script>
-
-  <!-- Css -->
-  <link rel="stylesheet" href="../static/css/common_style.css">
-
-
   <!-- Lootie -->
   <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-
-
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-
-</head>
-
-<body>
-
-  <div class="header">
-
-    <div class="zoom headerZoom">
-      <div class="title">
-        <h1 class="h1_f sh1 paci_font" style="color: whitesmoke;">My Works</h1>
-        <!-- <a href="http://webdesignerwall.com/tutorials/how-to-add-icon-fonts-to-any-element-with-css"
-				alt="webdesignerwall.com" target="_blank"><button>View Tutorial</button></a> -->
-      </div>
-    </div>
-  </div>
-
-  <div id="navbar">
-    <!-- <a href="#default" id="logo"><img src="../static/images/pcp3dlogo.png" width="49vw" alt=""></a> -->
-
-    <a href="#default" class="nav-name paci_font">Prateek's Portfolio Website</a>
-    <div class="navbar-right paci_font">
-      <!-- <a class="active le" href="javascript:void(0)">Home</a>
-  <a href="javascript:void(0)" class="le">News</a> -->
-      <span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
-      <span style="font-size:30px;cursor:pointer;color:transparent;">&#9776;</span>
-    </div>
-  </div>
-
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content paci_font">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-    </div>
-  </div>
-
-  <div class="content mt-4">
-    <h3 class="display-4 paci_font">Here are some of my works</h3>
-    <p>The navbar will stick to the top when you reach its scroll position.</p>
-    <div class="container">
-      <center>
-      <lottie-player id="firstLottie" src="https://assets9.lottiefiles.com/packages/lf20_u5nd9awf.json"
-        style="width:400px; height: 400px; z-index: -999;">"></lottie-player>
-      </center></div>
-    
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
-      et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-      repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
-      et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-      repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
-      et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-      repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-
-      
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at temporibus, quasi facilis dolorem expedita
-    blanditiis quis nobis maxime aut ratione tempora similique obcaecati officiis cumque eos eum, libero impedit, dolor
-    quam harum itaque! Voluptatibus, a debitis. Aliquam architecto expedita veritatis magni possimus consectetur eum
-    aperiam neque et, inventore suscipit in quae, veniam cumque minima est quas tempore quo quaerat odio voluptate. Qui
-    delectus odit optio cupiditate assumenda esse repudiandae quia, amet accusamus saepe voluptatibus exercitationem
-    deleniti recusandae magni ea aut, magnam perferendis minus? Ipsam quod magnam animi molestias voluptas quos sapiente
-    nemo ex modi. Incidunt dolores dignissimos iure, molestias sit temporibus facere nisi mollitia cum veniam et
-    deleniti eos. Consectetur, iusto ipsum. Blanditiis aliquam neque sequi officiis veniam veritatis aliquid earum
-    incidunt reiciendis eius, quo, facere eveniet accusantium dicta distinct
-    is exercitationem ex? Impedit
-    tempora id totam tenetur natus provident, ullam, deserunt magni reprehenderit reiciendis quidem sequi maxime optio
-    iure. Assumenda ipsam tempora reprehenderit nam explicabo tenetur hic! Unde provident magni iusto voluptates
-    blanditiis accusamus impedit eum atque tempore dolores, minus ab libero aspernatur culpa sunt, error architecto vero
-    placeat ipsam? Voluptatibus iste itaque quasi impedit architecto tenetur. Sapiente, maxime minus vel quibusdam alias
-    reiciendis numquam amet consectetur ipsa deleniti quisquam vitae, delectus modi illum quia aperiam dolores quo
-    aliquid. Fuga exercitationem quod, ipsam doloremque provident, doloribus ad rem inventore nisi vel odio molestias,
-    hic perferendis cumque aliquam necessitatibus corrupti suscipit explicabo ipsum facilis velit sequi aspernatur! A,
-    libero. Tempora, facilis consequatur dolor blanditiis illum molestias aliquam qui quod aut corrupti voluptatem,
-    accusamus corporis placeat doloribus optio, nobis iusto! Laborum doloremque eaque eligendi deserunt, beatae sint
-    dolore natus aliquam atque unde neque voluptas saepe inventore quo similique dolor adipisci provident illo ipsum
-    corrupti ipsam. Asperiores quam dolores aspernatur ipsum. Et perferendis dicta dolorem fuga error, quia quidem
-    ducimus sapiente corrupti qui itaque doloremque commodi blanditiis sint ab molestiae unde sed numquam adipisci eum
-    earum aperiam, fugit nam distinctio! Nesciunt dolorem, quas sapiente eaque veniam optio fugiat ut accusamus fuga
-    repellendus vitae deleniti, consectetur maxime assumenda laboriosam reiciendis, temporibus natus ipsum officia nobis
-    repudiandae est a? Aperiam quos, cumque numquam enim provident error sequi esse, mollitia inventore corporis totam
-    accusantium. Soluta veritatis impedit cupiditate est quaerat quasi omnis nisi quis odio corporis magnam quidem iure
-    temporibus dicta nemo, expedita aut sapiente amet reiciendis aliquam odit! Nemo ipsam odio voluptates veniam,
-    praesentium consequuntur explicabo rem suscipit numquam ex itaque inventore soluta nihil ipsa beatae in fuga
-    consectetur officia id molestias quia. Cupiditate sed ad, deleniti harum mollitia praesentium necessitatibus nemo,
-    numquam voluptatum facere distinctio, repellat exercitationem? Quisquam rem quos fugiat nulla illo eum placeat ullam
-    maiores modi consectetur accusantium magni rerum consequatur, vitae, atque amet corrupti cupiditate voluptatum
-    adipisci. Totam perferendis magnam minima animi et. Quasi, iste facilis laborum quod corrupti quam ab maiores maxime
-    nesciunt velit eligendi facere quo alias expedita dolore impedit excepturi delectus tempora saepe nobis! Ducimus
-    veniam inventore, eveniet commodi nisi nihil non neque saepe deleniti voluptatem consectetur, quo vero aperiam!
-    Laborum minima dignissimos repudiandae eos eius praesentium! Nobis magni eum molestias quis, repellendus in, eos
-    reiciendis dolore rem omnis mollitia tempora et quas impedit commodi nihil quo adipisci illum accusamus natus.
-    Nesciunt fugiat laborum adipisci deleniti beatae, quis minus mollitia fuga delectus sit aliquid, ipsam sapiente non
-    vel! Quas quidem vero magnam reprehenderit ducimus. At provident quidem culpa natus quis, quasi, eligendi laudantium
-    vero praesentium dolorem amet numquam aperiam, tenetur velit labore nesciunt! Deserunt placeat asperiores tempore
-    quam odio iste voluptates rem? Omnis repellendus amet laudantium ipsa est quasi iste ducimus obcaecati, quos
-    perferendis quisquam illum asperiores laborum error. Dolorum corporis, dolores autem illo labore a tenetur officiis
-    fugit est. Praesentium, dolore.
-
-  </div>
 
   <script>
     LottieInteractivity.create({
@@ -161,31 +20,237 @@
       ]
     });
   </script>
+  <!-- Lootie -- End -->
+</head>
 
-  <script>
-    function openNav() {
-      document.getElementById("myNav").style.height = "100%";
-    }
+<div class="header">
 
-    function closeNav() {
-      document.getElementById("myNav").style.height = "0%";
-    }
-  </script>
-  <script>
-    window.onscroll = function () { myFunction() };
+  <div class="zoom headerZoom">
+    <div class="title">
+      <h1 class="h1_f sh1 paci_font" style="color: whitesmoke;">My Works</h1>
+      <!-- <a href="http://webdesignerwall.com/tutorials/how-to-add-icon-fonts-to-any-element-with-css"
+				alt="webdesignerwall.com" target="_blank"><button>View Tutorial</button></a> -->
+    </div>
+  </div>
+</div>
 
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
+{% extends "layout.html" %}
 
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-  </script>
 
-</body>
+{% block content %}
 
-</html>
+
+
+<div class="container mt-4">
+  <h3 class="display-4 paci_font ri_a">Here are some of my works</h3>
+  <div class="container">
+    <div class="">
+      <center>
+        <lottie-player id="firstLottie" src="https://assets9.lottiefiles.com/packages/lf20_u5nd9awf.json"
+          style="width:100%; height: 260px; z-index: -999;"></lottie-player>
+      </center>
+    </div>
+    <br>
+
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+      et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+      repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+    <p>
+      websites
+      logos
+      apps
+    </p>
+
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+      et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+      repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  </div>
+
+  <!-- 888888888888 888888888888888888888 WEBSITES 88888888888888888 8888888888888 -->
+  <div class="wrapper">
+    <h2><strong>Websites<span>( 4 )</span></strong></h2>
+    <div class="cards">
+
+      <!-- -------------Fx Card 1 -->
+      <figure class="card">
+        <img src="https://mrreiha.keybase.pub/codepen/hover-fx/1.jpg" />
+        <figcaption>Dota 2</figcaption>
+      </figure>
+
+      <!-- -------------Fx Card 2 -->
+      <figure class="card">
+        <img src="https://mrreiha.keybase.pub/codepen/hover-fx/2.jpg" />
+        <figcaption>Stick Fight</figcaption>
+      </figure>
+
+      <!-- -------------Fx Card 3 -->
+      <figure class="card">
+        <img src="https://mrreiha.keybase.pub/codepen/hover-fx/3.jpg" />
+        <figcaption>Minion Masters</figcaption>
+      </figure>
+
+      <!-- -------------Fx Card 4 -->
+      <figure class="card">
+        <img src="https://mrreiha.keybase.pub/codepen/hover-fx/4.jpg" />
+        <figcaption>KoseBoz!</figcaption>
+      </figure>
+
+      <!-- -------------Fx Card 1 -->
+      <figure class="card">
+        <img src="https://mrreiha.keybase.pub/codepen/hover-fx/1.jpg" />
+        <figcaption>Dota 2</figcaption>
+      </figure>
+
+      <!-- -------------Fx Card 2 -->
+      <figure class="card">
+        <img src="https://mrreiha.keybase.pub/codepen/hover-fx/2.jpg" />
+        <figcaption>Stick Fight</figcaption>
+      </figure>
+
+      <!-- -------------Fx Card 3 -->
+      <figure class="card">
+        <img src="https://mrreiha.keybase.pub/codepen/hover-fx/3.jpg" />
+        <figcaption>Minion Masters</figcaption>
+      </figure>
+
+      <!-- -------------Fx Card 4 -->
+      <figure class="card">
+        <img src="https://mrreiha.keybase.pub/codepen/hover-fx/4.jpg" />
+        <figcaption>KoseBoz!</figcaption>
+      </figure>
+
+    </div>
+    <!-- 888888888888 888888888888888888888 APPS 88888888888888888 8888888888888 -->
+    <div class="wrapper">
+      <h2><strong>Apps<span>( 1 )</span></strong></h2>
+      <div class="cards">
+        <!-- -------------Fx Card 1 -->
+        <figure class="card mb-4">
+          <img src="../static/images/works/mobileApp1_gym.png" />
+          <figcaption>
+            <div class="fx_card_overtext float-right">
+              <a href="">Demo</a>
+            </div>
+            <div class="fx_card_overtext_Code float-right">
+              <a href="">Code</a>
+            </div>
+            <hr>
+            GymApp
+          </figcaption>
+        </figure>
+
+      </div>
+      <!-- 888888888888 888888888888888888888 LOGOS 88888888888888888 8888888888888 -->
+      <div class="wrapper">
+        <h2><strong>Logos<span>( 4 )</span></strong></h2>
+        <div class="cards">
+
+          <!-- -------------Fx Card 1 -->
+          <figure class="card">
+            <img src="https://mrreiha.keybase.pub/codepen/hover-fx/1.jpg" />
+            <figcaption>Dota 2</figcaption>
+          </figure>
+
+          <!-- -------------Fx Card 2 -->
+          <figure class="card">
+            <img src="https://mrreiha.keybase.pub/codepen/hover-fx/2.jpg" />
+            <figcaption>Stick Fight</figcaption>
+          </figure>
+
+          <!-- -------------Fx Card 3 -->
+          <figure class="card">
+            <img src="https://mrreiha.keybase.pub/codepen/hover-fx/3.jpg" />
+            <figcaption>Minion Masters</figcaption>
+          </figure>
+
+          <!-- -------------Fx Card 4 -->
+          <figure class="card">
+            <img src="https://mrreiha.keybase.pub/codepen/hover-fx/4.jpg" />
+            <figcaption>KoseBoz!</figcaption>
+
+          </figure>
+
+        </div>
+        <!-- 8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888 -->
+        <h2><strong>What's Comming Next?</strong></h2>
+
+        <div class="news">
+
+          <figure class="article">
+
+            <img src="https://mrreiha.keybase.pub/codepen/hover-fx/news1.jpg" />
+
+            <figcaption>
+
+              <h3>New Item</h3>
+
+              <p>
+
+                In today’s update, two heads are better than one, and three heads are better than that, as the all-new
+                Flockheart’s Gamble Arcana item for Ogre Magi makes its grand debut.
+
+              </p>
+
+            </figcaption>
+
+          </figure>
+
+          <figure class="article">
+
+            <img src="https://mrreiha.keybase.pub/codepen/hover-fx/news2.png" />
+
+            <figcaption>
+
+              <h3>Update</h3>
+
+              <p>
+
+                Just in time for Lunar New Year and the Rat’s time in the cyclical place of honor, the Treasure of
+                Unbound
+                Majesty is now available.
+
+              </p>
+
+            </figcaption>
+
+          </figure>
+
+        </div>
+
+      </div>
+
+      <div class="container">
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at temporibus, quasi facilis dolorem expedita
+        blanditiis quis nobis maxime aut ratione tempora similique obcaecati officiis cumque eos eum, libero impedit,
+        dolor
+        quam harum itaque! Voluptatibus, a debitis. Aliquam architecto expedita veritatis magni possimus consectetur eum
+        aperiam neque et, inventore suscipit in quae, veniam cumque minima est quas tempore quo quaerat odio voluptate.
+        Qui
+        delectus odit optio cupiditate assumenda esse repudiandae quia, amet accusamus saepe voluptatibus exercitationem
+        deleniti recusandae magni ea aut, magnam perferendis minus? Ipsam quod magnam animi molestias voluptas quos
+        sapiente
+        nemo ex modi. Incidunt dolores dignissimos iure, molestias sit temporibus facere nisi mollitia cum veniam et
+        deleniti eos. Consectetur, iusto ipsum. Blanditiis aliquam neque sequi officiis veniam veritatis aliquid earum
+        incidunt reiciendis eius, quo, facere eveniet accusantium dicta distinct
+        is exercitationem ex? Impedit
+        tempora id totam tenetur natus provident, ullam, deserunt magni reprehenderit reiciendis quidem sequi maxime
+        optio
+        iure. Assumenda ipsam tempora reprehenderit nam explicabo tenetur hic! Unde provident magni iusto voluptates
+        blanditiis accusamus impedit eum atque tempore dolores, minus ab libero aspernatur culpa sunt, error architecto
+        vero
+        placeat ipsam? Voluptatibus iste itaque quasi impedit architecto tenetur. Sapiente, maxime minus vel quibusdam
+        alias
+        reiciendis numquam amet consectetur ipsa deleniti quisquam vitae, delectus modi illum quia aperiam dolores quo
+        aliquid. Fuga exercitationem quod, ipsam doloremque provident, doloribus ad rem inventore nisi vel odio
+        molestias,
+        hic perferendis cumque aliquam necessitatibus corrupti suscipit explicabo ipsum facilis velit sequi aspernatur!
+        A,
+        libero. Tempora, facilis
+      </div>
+      <!-- partial -->
+
+
+
+      {% endblock content %}

@@ -29,3 +29,15 @@
 .paci_font{
     font-family: 'Pacifico', cursive;
   }
+
+.small_font{
+    font-size: 12px;
+}
+
+.ri_a{
+    text-align: right;
+}
+
+a{
+    text-decoration: none;
+}

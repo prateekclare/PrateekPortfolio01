@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Simplicity</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="../static/css/graphics.css">
+    {% include "includes/alllinks.html" %}
+
+</head>
+
+<body>
+
+    <!-- partial:index.partial.html -->
+    <div class="w">
+        <div class="ts">
+
+            <input type="radio" id="c1" name="ts" checked="checked" />
+            <label class="t" for="c1"><img src="../static/images/works/graphics/1.jpg" /></label>
+
+            <input type="radio" id="c2" name="ts" />
+            <label class="t" for="c2"><img src="../static/images/works/graphics/2.jpg" /></label>
+
+            <input type="radio" id="c3" name="ts" />
+            <label class="t" for="c3"><img src="../static/images/works/graphics/3.png" /></label>
+
+            <input type="radio" id="c4" name="ts" />
+            <label class="t" for="c4"><img src="../static/images/works/graphics/4.png" /></label>
+
+            <input type="radio" id="c5" name="ts" />
+            <label class="t" for="c5"><img src="../static/images/works/graphics/5.png" />
+            </label>
+
+            <input type="radio" id="c6" name="ts" checked="checked" />
+            <label class="t" for="c1"><img src="../static/images/works/graphics/6.png" /></label>
+
+            <input type="radio" id="c6" name="ts" checked="checked" />
+            <label class="t" for="c1"><img src="../static/images/works/graphics/7.png" /></label>
+
+        
+        </div>
+    </div>
+
+    <!-- partial -->
+    <script>
+        const els = document.querySelectorAll("[type='radio']");
+        for (const el of els)
+            el.addEventListener("input", e => reorder(e.target, els));
+        reorder(els[0], els);
+
+        function reorder(targetEl, els) {
+            const nItems = els.length;
+            let processedUncheck = 0;
+            for (const el of els) {
+                const containerEl = el.nextElementSibling;
+                if (el === targetEl) {//checked radio
+                    containerEl.style.setProperty("--w", "100%");
+                    containerEl.style.setProperty("--l", "0");
+                }
+                else {//unchecked radios
+                    containerEl.style.setProperty("--w", `${100 / (nItems - 1)}%`);
+                    containerEl.style.setProperty("--l", `${processedUncheck * 100 / (nItems - 1)}%`);
+                    processedUncheck += 1;
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

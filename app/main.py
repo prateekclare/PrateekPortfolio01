@@ -9,6 +9,10 @@ def home():
 def works():
     return render_template('h_works.html')
 
+@app.route('/works/graphics')
+def gdp():
+    return render_template('h_wo_graphics1.html')
+
 @app.route('/hire')
 def hire():
     return render_template('h_hire.html')

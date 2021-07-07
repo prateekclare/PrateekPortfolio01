@@ -30,6 +30,10 @@
     font-family: 'Pacifico', cursive;
   }
 
+.cursive_font{
+    font-family: cursive;
+}
+
 .small_font{
     font-size: 12px;
 }

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap');
+
+.div_overlaypc {
+    position: relative;
+    z-index: 1;
+
+    word-wrap: break-word;
+    flex-wrap: wrap;
+}
+
+.img_overlayPc {
+    position: absolute;
+    z-index: 2;
+
+    width: 70vh;
+}
+
+#overlay_textpc {
+    display: none;
+}
+
+#overlay_textpc {
+    position: relative;
+    z-index: 3;
+
+    font-family: 'Tourney', cursive;
+    font-size: 50vh;
+    color: #ffffff;
+    /* background-color: rgba(137, 43, 226, 0.527); */
+    transition-duration: display 15s;
+    transition-delay: 5s;
+    display: block;
+    top: 20px;
+
+
+}
+
+.img_overlayPc{
+    top: 15%;
+}
+
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap');
+
+.div_overlaypc {
+    position: relative;
+    z-index: 1;
+
+    word-wrap: break-word;
+    flex-wrap: wrap;
+}
+
+.img_overlayPc {
+    position: absolute;
+    z-index: 2;
+
+    width: 60vh;
+}
+
+#overlay_textpc {
+    display: none;
+}
+
+.myDIVpc:hover+#overlay_textpc {
+    position: relative;
+    z-index: 3;
+
+    font-family: 'Tourney', cursive;
+    font-size: 53vh;
+    color: #ffffff;*/
+    /* background-color: rgba(137, 43, 226, 0.527); 
+    transition-duration: display 15s;
+    transition-delay: 5s;
+    display: block;
+    top: 20px;
+
+
+} */

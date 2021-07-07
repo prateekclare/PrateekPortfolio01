@@ -1,90 +1,187 @@
+<!DOCTYPE html>
+<html>
+
 <head>
-    <!-- Timelinne -->
-    <link rel="stylesheet" href="../static/css/timeline.css">
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css'>
-    <script src='https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js'></script>
-    <script src='https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js'></script>
-    <!--  -->
+    {% include "includes/aboutme_links.html" %}
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<style>
+    @media only screen and (max-width: 1026px) {
+    .fadeshow1 {
+        display: none;
+    }
+}
+</style>
 </head>
-{% extends "layout.html" %}
 
-{% block content %}
-<br>
-<!-- partial:index.partial.html -->
-<div class="uk-container uk-padding">
-    <div>
-        <h1>
-            Educational Background
-        </h1>
-        <br>
-    </div>
-    <div class="uk-timeline">
-        <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge"><span uk-icon="check"></span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2020-07-08">2017</time></h3>
-                            <span class="uk-label uk-label-success uk-margin-auto-left">Matrix</span>
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p class="uk-text-success">Fully responsive timeline you can add to your UIkit 3 project
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge">
-                    <span uk-icon="" class="bi bi-journal-check">
+<body>
+    {% include "includes/navigation.html" %}
+    <!-- <div class="container-fluid float-left">
+      
 
-                    </span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2020-07-07">2019</time></h3>
-                            <span class="uk-label uk-label-warning uk-margin-auto-left">Senior Secondary</span>
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                        </p>
-                     
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="float-right">
+            Lorem, ipsum dolor sit amet
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p>Amet corrupti tempora magni explicabo eaque cu as laborum reprehenderit </p>
+            <p>Amet corrupti tempora magni explicabo eaque cup borum reprehenderit </p>
         </div>
-        <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge"><span uk-icon="" class="bi bi-award"></span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2020-07-06">2021</time></h3>
-                            <span class="uk-label uk-label-danger uk-margin-auto-left">College Diploma</span>
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                        </p>
-                    </div>
-                </div>
-                <!-- <a href="#"><span class="uk-margin-small-right" uk-icon="triangle-down"></span>Load more</a> -->
-            </div>
+
+    </div> -->
+
+
+    <br>
+    <div style="position: fixed;" class="fadeshow1 p-4 m-4">
+        <div class="div_overlaypc">
+            <img class="img_overlayPc myDIVpc shadow-lg" src="../static/images/aboutme_h/myimg_palace2.jpg" />
+            <span id="overlay_textpc" class="hidepc">Hi</span>
         </div>
     </div>
-</div>
 
-{% endblock content %}
+  <div class="p-4 m-4">
+
+      </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4">
+              
+            </div>
+
+            <div class="col-md-4">
+             
+            </div>
+
+            <div class="col-md-4">
+              
+            </div>
+        </div>
+
+        <!-- Row2 ------------------------------------------------------ -->
+        <div class="row">
+            <div class="col-md-4">
+               
+            </div>
+
+            <div class="col-md-4">
+                <h2>
+                    Heading
+                </h2>
+                <p>
+                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
+                    mollis euismod. Donec sed odio dui.
+                </p>
+                <p>
+                    <a class="btn" href="#">View details »</a>
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <center>
+                    <img src="../static/images/aboutme_h/Screenshot 2021-07-07 103827.png" />
+                </center>
+            </div>
+        </div>
+
+        <!-- Row3 ------------------------------------------------------ -->
+        <div class="row">
+            <div class="col-md-4">
+                 
+            </div>
+
+            <div class="col-md-8">
+                <div class="uk-container uk-padding"  style="z-index: -99;">
+                    <div>
+                        <h1>
+                            Educational Background
+                        </h1>
+                        <br>
+                    </div>
+                    <div class="uk-timeline">
+                        <div class="uk-timeline-item">
+                            <div class="uk-timeline-icon">
+                                <span class="uk-badge"><span uk-icon="check"></span></span>
+                            </div>
+                            <div class="uk-timeline-content">
+                                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
+                                    <div class="uk-card-header">
+                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                            <h3 class="uk-card-title"><time datetime="2020-07-08">2017</time></h3>
+                                            <span class="uk-label uk-label-success uk-margin-auto-left">Matrix</span>
+                                        </div>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <p class="uk-text-success">Fully responsive timeline you can add to your UIkit 3
+                                            project
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-timeline-item">
+                            <div class="uk-timeline-icon">
+                                <span class="uk-badge">
+                                    <span uk-icon="" class="bi bi-journal-check">
+
+                                    </span></span>
+                            </div>
+                            <div class="uk-timeline-content">
+                                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
+                                    <div class="uk-card-header">
+                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                            <h3 class="uk-card-title"><time datetime="2020-07-07">2019</time></h3>
+                                            <span class="uk-label uk-label-warning uk-margin-auto-left">Senior
+                                                Secondary</span>
+                                        </div>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt.
+                                        </p>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-timeline-item">
+                            <div class="uk-timeline-icon">
+                                <span class="uk-badge"><span uk-icon="" class="bi bi-award"></span></span>
+                            </div>
+                            <div class="uk-timeline-content">
+                                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
+                                    <div class="uk-card-header">
+                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                            <h3 class="uk-card-title"><time datetime="2020-07-06">2021</time></h3>
+                                            <span class="uk-label uk-label-danger uk-margin-auto-left">College
+                                                Diploma</span>
+                                        </div>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- <a href="#"><span class="uk-margin-small-right" uk-icon="triangle-down"></span>Load more</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

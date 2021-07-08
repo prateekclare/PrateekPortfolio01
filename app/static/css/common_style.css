@@ -26,12 +26,13 @@
 
 }
 
+/* -- Font Style -- Start -- */
 
 .paci_font {
     font-family: 'Pacifico', cursive;
 }
 
-.monoton_font{
+.monoton_font {
     font-family: 'Monoton', cursive;
 }
 
@@ -43,6 +44,13 @@
     font-size: 12px;
 }
 
+.Fweight_small{
+    font-weight: 100;
+}
+
+/* -- Font Style -- End -- */
+
+/* --> Common St */
 .ri_a {
     text-align: right;
 }
@@ -63,8 +71,9 @@ a {
     color: rgba(139, 4, 4, 0.89);
 }
 
+/* --> Common  End */
 
-/* ----------- ----------- */
+/* -----------  ----------- */
 article {
     max-width: 500px;
     margin: 2rem auto;
@@ -114,3 +123,9 @@ figure+p {
 }
 
 /* ----------- --------------- */
+
+
+.t-dark ul a{
+    padding-left: 2%;
+    padding-right: 2px;
+}

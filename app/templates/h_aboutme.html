@@ -14,74 +14,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <style>
-        @media only screen and (max-width: 1026px) {
-            .fadeshow1 {
-                display: none;
-            }
-        }
 
-        /* --------- Zoom Transform -- Start --*/
-        .star:hover img {
-            transform: rotate(0) scale(1.5) translateZ(0);
-            transition-duration: 1s;
-
-            /* transform: rotate(0) scale(1.8) translateZ(0); */
-            -webkit-filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.70));
-            filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.70));
-
-        }
-
-        /* --------- Zoom Transform -- END --  */
-
-        .center a {
-            margin: 0 5px;
-        }
-
-        /* --------- Grid Start ---------- */
-        .myGallery_Prateek {
-            display: grid;
-            grid-gap: 10px;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        }
-
-        .myGallery_Prateek img {
-            width: 100%;
-        }
-
-        /* --------- Grid End---------- */
-
-        /* --------- Social Start ---------- */
-        ul {
-            list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        ul li {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 20px;
-            width: 20px;
-            margin: 0 10px;
-        }
-
-        ul li a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            width: 100%;
-        }
-
-        ul li a img {
-            width: 80%;
-        }
-
-        /* --------- Social Start ---------- */
-    </style>
 </head>
 
 <body>
@@ -97,13 +30,12 @@
         </div>
 
     </div> -->
-
-
     <br>
+
     <div style="position: fixed;" class="fadeshow1 p-4 m-4">
         <div class="div_overlaypc">
             <img class="img_overlayPc myDIVpc shadow-lg" src="../static/images/aboutme_h/myimg_palace2.jpg" />
-            <span id="overlay_textpc" class="hidepc">Hi</span>
+            <span id="overlay_textpc" class="hidepc Fweight_small">Hi</span>
         </div>
     </div>
 
@@ -191,7 +123,9 @@
 
             <div class="col-md-4">
                 <center>
-                    <img src="../static/images/aboutme_h/Screenshot 2021-07-07 103827.png" />
+                    <div class="ripple" data-mdb-ripple-color="light">
+                        <img src="../static/images/aboutme_h/Screenshot 2021-07-07 103827.png" />
+                    </div>
                 </center>
             </div>
         </div>
@@ -211,7 +145,7 @@
 
                     <!-- @@ Grid ---------------------- -->
                     <center>
-                        <div class="ripple star" data-mdb-ripple-color="light">
+                        <div class="ripple star" data-mdb-ripple-color="blue">
                             <img src="../static/images/aboutme_h/Certificates/google.png" width="350px" />
                         </div>
                     </center>
@@ -300,9 +234,20 @@
                                         </div>
                                     </div>
                                     <div class="uk-card-body">
-                                        <p class="uk-text-success">Fully responsive timeline you can add to your UIkit 3
-                                            project
+                                        <p>
+                                            <b>Subjects :</b>
+                                            Mathematics, Computer, Geography, History, Physics,
+                                            Chemistry, Biology
                                         </p>
+                                        <p>
+                                            <b class="uk-text-danger">Co-Curricular Activities:</b>
+                                            Part of Football Team
+                                        </p>
+                                        <p>
+                                            <b>Social work :</b>
+                                            
+                                            Part of Clean India Campaign                                        </p>
+
                                     </div>
                                 </div>
                             </div>
@@ -325,9 +270,13 @@
                                         </div>
                                     </div>
                                     <div class="uk-card-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt.
+
+                                        <p>
+                                            <b>Major :</b> Physics, Chemistry, Mathematics
+                                        <p>
+                                            <b>Achievements :</b>
+                                            Cleared Engineering competitive exam (JEE Mains & Advance).
+                                        <p>
                                         </p>
                                     </div>
                                 </div>
@@ -351,15 +300,20 @@
                                         </div>
                                     </div>
                                     <div class="uk-card-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt.
+                                        <p>
+                                            • Database development in Oracle SQL and My SQL</p>
+                                        <p>
+                                            • Web development using J-Query, MEAN stack, and advance java script</p>
+                                        <p>
+                                            <b>Special Achievements :</b>
+                                            Name on dean’s honor list, Student of the term 2020 award
                                         </p>
                                     </div>
                                 </div>
                                 <!-- <a href="#"><span class="uk-margin-small-right" uk-icon="triangle-down"></span>Load more</a> -->
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>

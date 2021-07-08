@@ -47,7 +47,7 @@ D:\CompLungs\Python\PyProjects\FlaskPy\sample_uploadII
 Maintaining your Python web app
 heroku login
 git add .
-git commit -m "Change the about page 6J"
+git commit -m "Change the about page 6 Launch-1b"
 git push heroku master or git push heroku HEAD:master
 heroku open
 

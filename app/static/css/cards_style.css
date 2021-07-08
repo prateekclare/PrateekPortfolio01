@@ -1,10 +1,14 @@
-body, html {
+body,
+html {
   font-size: 16px;
-  background: #ffffff;
+  /* background: #ffffff; */
+  /* Hide Article effect for Display */
 }
 
-/*  */
-body.hovered{
+/* Hide Article effect for Display */
+
+/* Full Body color */
+/* body.hovered{
   background: #bbbbb734;
 }
 
@@ -14,7 +18,7 @@ body.hovered_card1{
 
 body.hovered_card2{
   background: #ebabab;
-}
+} */
 
 .siteTitle {
   display: block;
@@ -22,6 +26,7 @@ body.hovered_card2{
   font-size: 30px;
   margin: 20px 0;
 }
+
 @media (min-width: 768px) {
   .siteTitle {
     font-size: 60px;
@@ -48,6 +53,7 @@ footer {
   background-image: url("https://images.unsplash.com/photo-1545121436-87364761152c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
   background-size: cover;
 }
+
 @media (min-width: 768px) {
   .card {
     height: 500px;
@@ -64,6 +70,7 @@ footer {
   box-sizing: border-box;
   padding: 40px;
 }
+
 @media (min-width: 768px) {
   .inner {
     width: 50%;
@@ -81,6 +88,7 @@ footer {
   position: relative;
   margin: 0 0 20px 0;
 }
+
 @media (min-width: 768px) {
   .title {
     font-size: 30px;
@@ -112,6 +120,7 @@ footer {
   text-decoration: none;
   position: relative;
 }
+
 .footerLink:after {
   content: "";
   position: absolute;
@@ -121,11 +130,12 @@ footer {
   left: 0;
   bottom: 0;
 }
+
 .footerLink:last-child {
   margin-right: 0;
 }
+
 /* 
 .myImage:hover{
   background-color: #a6f8d5;
 } */
-

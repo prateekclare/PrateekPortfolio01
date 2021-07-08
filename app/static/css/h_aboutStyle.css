@@ -22,7 +22,7 @@
 #overlay_textpc {
     position: relative;
     z-index: 3;
-
+right: 13px;
     font-family: 'Tourney', cursive;
     font-size: 50vh;
     color: #ffffff;

@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-.shadow1{
+.shadow1 {
     box-shadow: 3px 0px 5px black, 8px 0px 130px rgba(0, 0, 0, 0.319) inset, 0px 0px 20px rgba(0, 0, 0, 0.411) inset;
 }
-.shadow2inn{
+
+.shadow2inn {
     box-shadow: 3px 0px 5px black, 0px 0px 20px rgba(0, 0, 0, 0.411) inset;
 }
 
@@ -23,29 +24,93 @@
     backdrop-filter: blur(5px);
     background-color: rgba(59, 170, 59, 0.151);
 
-  }
+}
 
-  
-.paci_font{
+
+.paci_font {
     font-family: 'Pacifico', cursive;
-  }
+}
 
-.cursive_font{
+.monoton_font{
+    font-family: 'Monoton', cursive;
+}
+
+.cursive_font {
     font-family: cursive;
 }
 
-.small_font{
+.small_font {
     font-size: 12px;
 }
 
-.ri_a{
+.ri_a {
     text-align: right;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.nai_display{
+.nai_display {
     display: none;
 }
+
+.mrIndia {
+    color: transparent;
+}
+
+.rd_color {
+    color: rgba(139, 4, 4, 0.89);
+}
+
+
+/* ----------- ----------- */
+article {
+    max-width: 500px;
+    margin: 2rem auto;
+    font: 1.5rem/1.5 system-ui;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    /* padding-bottom: 150px; */
+}
+
+figure img {
+    max-width: 100%;
+    display: block;
+    /* margin-bottom: 120px; */
+}
+
+figure img.top {
+    position: absolute;
+    top: 105px;
+    left: 0;
+}
+
+figure figcaption {
+    border: 5px solid #009688;
+    color: #009688;
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 1;
+    /* padding: 0.25rem; */
+    text-align: center;
+    position: sticky;
+    top: 0;
+
+    mix-blend-mode: color-dodge;
+}
+
+figure figcaption strong {
+    display: block;
+}
+
+figure+p {
+    background: white;
+    position: relative;
+}
+
+/* ----------- --------------- */

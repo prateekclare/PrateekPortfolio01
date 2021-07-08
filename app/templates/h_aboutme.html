@@ -3,17 +3,85 @@
 
 <head>
     {% include "includes/aboutme_links.html" %}
-
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-<style>
-    @media only screen and (max-width: 1026px) {
-    .fadeshow1 {
-        display: none;
-    }
-}
-</style>
+    <style>
+        @media only screen and (max-width: 1026px) {
+            .fadeshow1 {
+                display: none;
+            }
+        }
+
+        /* --------- Zoom Transform -- Start --*/
+        .star:hover img {
+            transform: rotate(0) scale(1.5) translateZ(0);
+            transition-duration: 1s;
+
+            /* transform: rotate(0) scale(1.8) translateZ(0); */
+            -webkit-filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.70));
+            filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.70));
+
+        }
+
+        /* --------- Zoom Transform -- END --  */
+
+        .center a {
+            margin: 0 5px;
+        }
+
+        /* --------- Grid Start ---------- */
+        .myGallery_Prateek {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .myGallery_Prateek img {
+            width: 100%;
+        }
+
+        /* --------- Grid End---------- */
+
+        /* --------- Social Start ---------- */
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        ul li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20px;
+            width: 20px;
+            margin: 0 10px;
+        }
+
+        ul li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        ul li a img {
+            width: 80%;
+        }
+
+        /* --------- Social Start ---------- */
+    </style>
 </head>
 
 <body>
@@ -39,45 +107,86 @@
         </div>
     </div>
 
-  <div class="p-4 m-4">
-
-      </div>
+    <div class="p-4 m-4 pt-4 mt-5">
+        <div class="mrIndia">.</div>
+    </div>
 
     <!-- ----------------------------------------------------------------------- -->
     <div class="container">
 
         <div class="row">
             <div class="col-md-4">
-              
+
             </div>
 
             <div class="col-md-4">
-             
+
             </div>
 
             <div class="col-md-4">
-              
+
             </div>
         </div>
 
         <!-- Row2 ------------------------------------------------------ -->
         <div class="row">
             <div class="col-md-4">
-               
+
             </div>
 
             <div class="col-md-4">
-                <h2>
-                    Heading
-                </h2>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                    mollis euismod. Donec sed odio dui.
-                </p>
-                <p>
+                <h1 class="paci_font">
+                    My Name is Prateek
+                </h1>
+                <h3 class="paci_font rd_color float-right">
+                    Nice to Meet You..
+                </h3> .
+                <hr>
+
+                <div class="postcard__preview-txt" style="font-size: 2.4vh;">
+                    Passionate student pursuing Undergraduate Computer Programming diploma.
+                    <p>Committed to
+                        achieve great in
+                        life and create an impact on other lives. A true dreamer and a life long learner, willing to
+                        fail untill
+                        succeed.</p>
+                    <br>
+                    <div class=" t-dark">
+                        <ul class="postcard__tagbox" style="text-decoration: none; color: transparent;">
+                            <a href="https://www.linkedin.com/in/prateek-clare-b6b17919b/"> <img
+                                    src="../static/images/IconsSocial/LINKEDIN_ICON_TRANSPARENT_400.gif" alt=""
+                                    height="50px">
+                            </a>
+                            <a href="https://m.facebook.com/people/Prateek-Clare/100012408844491"> <img
+                                    src="../static/images/IconsSocial/FACEBOOK_ICON_TRANSPARENT_400.gif" alt=""
+                                    height="50px">
+                            </a>
+                            <a href="http://twitter.com/clareprateek"> <img
+                                    src="../static/images/IconsSocial/TWITTER_ICON_TRANSPARENT_400.gif" alt=""
+                                    height="50px">
+                            </a>
+                            <a href="http://www.instagram.com/prateekclare/"> <img
+                                    src="../static/images/IconsSocial/INSTAGRAM_ICON_TRANSPARENT_400.gif" alt=""
+                                    height="50px">
+                            </a>
+                            <!-- <li class=""><i class="fas fa-clock mr-2"></i>55 mins.</li>
+                            <li class=" ">
+                                <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a> -->
+                        </ul>
+                    </div>
+
+                    <figure class="text-end float-right pt-3">
+                        <blockquote class="blockquote" style="font-family: 'Dancing Script', cursive;">
+                            <p>"Think beyond, Thinking.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <cite title="Source Title">Prateek Clare</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- <p>
                     <a class="btn" href="#">View details »</a>
-                </p>
+                </p> -->
             </div>
 
             <div class="col-md-4">
@@ -86,20 +195,95 @@
                 </center>
             </div>
         </div>
+        <!-- Row3------------------------------------------------------ -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-4">
+                </div>
 
-        <!-- Row3 ------------------------------------------------------ -->
+                <div class="col-md-8">
+                    <div>
+                        <h1 class="paci_font">
+                            Certifications
+                        </h1>
+                        <hr>
+                    </div>
+
+                    <!-- @@ Grid ---------------------- -->
+                    <center>
+                        <div class="ripple star" data-mdb-ripple-color="light">
+                            <img src="../static/images/aboutme_h/Certificates/google.png" width="350px" />
+                        </div>
+                    </center>
+
+                    <div class="myGallery_Prateek">
+                        <!-- <div class="ripple star" data-mdb-ripple-color="light">
+                            <img src="../static/images/aboutme_h/Certificates/google.png" />
+                        </div> -->
+                        <!-- ----------1 -->
+                        <div class="star" data-mdb-ripple-color="light">
+                            <img src="../static/images/aboutme_h/Certificates/StudentOfTerm.png" />
+                        </div>
+
+                        <!-- ----------2 -->
+                        <div class="star" data-mdb-ripple-color="light">
+                            <img src="../static/images/aboutme_h/Certificates/Award_canadaCulture.jpg" />
+                        </div>
+
+                        <!-- ----------3 -->
+                        <div class="star" data-mdb-ripple-color="light">
+                            <img src="../static/images/aboutme_h/Certificates/StudentAmbassador.png" />
+                        </div>
+
+                        <!-- ----------4 -->
+                        <div class="star" data-mdb-ripple-color="light">
+                            <img src="../static/images/aboutme_h/Certificates/Link_Photoshop2019.png" />
+                        </div>
+
+                        <!-- ----------5 -->
+                        <div class="star" data-mdb-ripple-color="light">
+                            <img src="../static/images/aboutme_h/Certificates/Link_HTMLimage.png" />
+                        </div>
+
+                        <!-- ----------6 -->
+                        <div class="ripple star" data-mdb-ripple-color="light">
+                            <img src="../static/images/aboutme_h/Certificates/Link_Parallex40m.png" />
+                        </div>
+
+                        <!-- <img src="../static/images/aboutme_h/Certificates/Annotation 2020-09-05 213445.png" />
+                        <img src="https://picsum.photos/190/190?3" />
+                        <img src="https://picsum.photos/190/190?4" />
+                        <img src="https://picsum.photos/190/190?5" />
+                        <img src="https://picsum.photos/190/190?6" />
+                        <img src="https://picsum.photos/190/190?7" />
+                        <img src="https://picsum.photos/190/190?8" />
+                        <img src="https://picsum.photos/190/190?9" />
+                        <img src="https://picsum.photos/190/190?10" /> -->
+                    </div>
+                    <!-- <div class="ripple star" data-mdb-ripple-color="light">
+                        <img src="https://mdbootstrap.com/img/new/fluid/city/113.jpg" width="50%" />
+                    </div> -->
+                    <div class="float-right paci_font">and many more...</div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Row5 ------------------------------------------------------ -->
         <div class="row">
             <div class="col-md-4">
-                 
+
             </div>
 
             <div class="col-md-8">
-                <div class="uk-container uk-padding"  style="z-index: -99;">
+                <div class="mt-5">
                     <div>
-                        <h1>
+                        <h1 class="paci_font">
                             Educational Background
                         </h1>
-                        <br>
+                        <hr>
                     </div>
                     <div class="uk-timeline">
                         <div class="uk-timeline-item">
@@ -110,7 +294,8 @@
                                 <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
                                     <div class="uk-card-header">
                                         <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                            <h3 class="uk-card-title"><time datetime="2020-07-08">2017</time></h3>
+                                            <h3 class="uk-card-title"><time datetime="2020-07-08">2017 : St. Francis
+                                                    Convent School</time></h3>
                                             <span class="uk-label uk-label-success uk-margin-auto-left">Matrix</span>
                                         </div>
                                     </div>
@@ -133,7 +318,8 @@
                                 <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
                                     <div class="uk-card-header">
                                         <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                            <h3 class="uk-card-title"><time datetime="2020-07-07">2019</time></h3>
+                                            <h3 class="uk-card-title"><time datetime="2020-07-07">2017-2019 : Police DAV
+                                                    School</time></h3>
                                             <span class="uk-label uk-label-warning uk-margin-auto-left">Senior
                                                 Secondary</span>
                                         </div>
@@ -143,15 +329,13 @@
                                             tempor
                                             incididunt.
                                         </p>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt.
-                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
+
                         <div class="uk-timeline-item">
                             <div class="uk-timeline-icon">
                                 <span class="uk-badge"><span uk-icon="" class="bi bi-award"></span></span>
@@ -160,7 +344,8 @@
                                 <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
                                     <div class="uk-card-header">
                                         <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                            <h3 class="uk-card-title"><time datetime="2020-07-06">2021</time></h3>
+                                            <h3 class="uk-card-title"><time datetime="2020-07-06">2020-2021 : Lambton
+                                                    College</time></h3>
                                             <span class="uk-label uk-label-danger uk-margin-auto-left">College
                                                 Diploma</span>
                                         </div>

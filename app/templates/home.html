@@ -33,7 +33,6 @@
 
   <!-- Css -->
   <link rel="stylesheet" href="../static/css/cards_style.css">
-  <link rel="stylesheet" href="../static/css/common_style.css">
 
 
 </head>
@@ -41,74 +40,91 @@
 <body>
   <!-- partial:index.partial.html -->
   <header class="container">
-    <div class="siteTitle typewrite" data-period="2000"
-      data-type='[ "Portfolio Website of", "Prateek Clare" ]'>
+    <div class="siteTitle typewrite" data-period="2000" data-type='[ "Portfolio Website of", "Website Created & Deigned by" ]'>
       <span class="wrap"></span>
   </header>
 
+  <center>
+    <article>
 
+      <figure>
+        <figcaption class="monoton_font">
+          <strong style="font-weight: 200;">Prateek</strong>
+          Clare
+        </figcaption>
+        <img
+          src='../static/images/Back3_homePic.png'
+          alt='Woman holding guitar over shoulder'>
+        <img src="../static/images/iam1ge_portfolio-min.png" alt=""
+          class="top">
+
+      </figure>
+    </article>
+
+  </center>
+  <!-- 
   <center>
     <img src="../static/images/iam1ge_portfolio-min.png" width="350vw" alt="" class="myImage" id="hover">
-  </center>
+  </center> -->
 
   <!-- <hr> -->
   </div>
 
-<center>
-  <div class="containerMain">
+  <center>
+    <div class="containerMain">
 
-    <table class="table" style="text-align: center;">
+      <table class="table" style="text-align: center;">
 
 
-      <tr>
-        <th scope="row">
-          <a href="https://www.instagram.com/prateekclare/">
-            <i class="bi bi-instagram shadow-sm" style="font-size: 2rem; color: rgb(73, 3, 3);">
-            </i></a>
-        </th>
-<!-- 
+        <tr>
+          <th scope="row">
+            <a href="https://www.instagram.com/prateekclare/">
+              <i class="bi bi-instagram shadow-sm" style="font-size: 2rem; color: rgb(73, 3, 3);">
+              </i></a>
+          </th>
+          <!-- 
         <th scope="row">
           <a href="https://www.freelancer.com/u/prateekclare6">
             <img width="45px" style="vertical-align: bottom;" src="https://camo.githubusercontent.com/c34d362e0e084f01b17fbef1b5332e97e40c75caceb85a1e705fbe5fdfe6d881/687474703a2f2f692e737461636b2e696d6775722e636f6d2f36774c69492e6a7067" alt="">
           </a>
         </th> -->
 
-        <th scope="row">
-          <a href="https://github.com/prateekclare">
-            <i class="bi bi-github" style="font-size: 2rem; color: black;">
-            </i></a>
-        </th>
+          <th scope="row">
+            <a href="https://github.com/prateekclare">
+              <i class="bi bi-github" style="font-size: 2rem; color: black;">
+              </i></a>
+          </th>
 
-        <th scope="row">
-          <a href="https://www.linkedin.com/in/prateek-clare-b6b17919b/">
-            <i class="bi bi-linkedin" style="font-size: 2rem; color: blue;">
-            </i></a>
-        </th>
+          <th scope="row">
+            <a href="https://www.linkedin.com/in/prateek-clare-b6b17919b/">
+              <i class="bi bi-linkedin" style="font-size: 2rem; color: blue;">
+              </i></a>
+          </th>
 
 
-        <th scope="row">
-          <a href="https://twitter.com/clareprateek">
-            <i class="bi bi-twitter" style="font-size: 2rem; color: cornflowerblue;"></i></a>
-        </th>
+          <th scope="row">
+            <a href="https://twitter.com/clareprateek">
+              <i class="bi bi-twitter" style="font-size: 2rem; color: cornflowerblue;"></i></a>
+          </th>
 
-        <th scope="row">
-          <a href="https://www.youtube.com/channel/UC5PDe5fXjQWCqszbP6zJYIQ">
-            <i class="bi bi-youtube" style="font-size: 2rem; color: red;"></i>
-          </a>
-        </th>
+          <th scope="row">
+            <a href="https://www.youtube.com/channel/UC5PDe5fXjQWCqszbP6zJYIQ">
+              <i class="bi bi-youtube" style="font-size: 2rem; color: red;"></i>
+            </a>
+          </th>
 
-        <th scope="row">
-          <a href="https://www.facebook.com/profile.php?id=100012408844491">
-            <i class="bi bi-facebook" style="font-size: 2rem; color: rgb(8, 0, 117);"></i>
-          </a>
-        </th>
+          <th scope="row">
+            <a href="https://www.facebook.com/profile.php?id=100012408844491">
+              <i class="bi bi-facebook" style="font-size: 2rem; color: rgb(8, 0, 117);"></i>
+            </a>
+          </th>
 
-      </tr>
+        </tr>
 
-    </table>
-    <div class="text-center">Do Follow On Social Media</div>
-  </div>
-</center>
+      </table>
+      <div class="text-center">Do Follow On Social Media</div>
+    </div>
+  </center>
 
   <br>
   <main>
@@ -127,9 +143,11 @@
       </div>
     </a>
 
-    <a href="{{url_for('hire') }}" class="card card3" id="card3" data-aos="fade-left" data-aos-duration="2500">
+    <a href="{{url_for('hire') }}" class="card card3" id="card3" data-aos="zoom-in" data-aos-duration="1300">
       <div class="inner shadow2inn">
-        <h2 class="title text-danger">THIS PAGE IS NOT YET AVAILABLE <hr>Contact Me</h2>
+        <h2 class="title text-danger">THIS PAGE IS NOT YET AVAILABLE
+          <hr>Contact Me
+        </h2>
         <time class="subtitle">Want any website/webpage?<time>
       </div>
     </a>
@@ -180,11 +198,11 @@
         AOS.init();
       </script>
       <!-- ++++++++++++++ End Animation On Scroll +++++++++++++ -->
-<br>
+      <br>
 </body>
 <footer class="col-12 ">
   {% extends 'includes/socialMd_box.html' %}
-  
+
 </footer>
 
 </html>

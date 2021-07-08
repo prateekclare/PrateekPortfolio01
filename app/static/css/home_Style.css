@@ -73,6 +73,58 @@ a {
 
 /* --> Common  End */
 
+/* -----------  ----------- */
+article {
+    max-width: 500px;
+    margin: 2rem auto;
+    font: 1.5rem/1.5 system-ui;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    /* padding-bottom: 150px; */
+}
+
+figure img {
+    max-width: 100%;
+    display: block;
+    /* margin-bottom: 120px; */
+}
+
+figure img.top {
+    position: absolute;
+    top: 105px;
+    left: 0;
+}
+
+figure figcaption {
+    border: 5px solid #009688;
+    color: #009688;
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 1;
+    /* padding: 0.25rem; */
+    text-align: center;
+    position: sticky;
+    top: 0;
+
+    mix-blend-mode: color-dodge;
+}
+
+figure figcaption strong {
+    display: block;
+}
+
+figure+p {
+    background: white;
+    position: relative;
+}
+
+/* ----------- --------------- */
+
+
 .t-dark ul a{
     padding-left: 2%;
     padding-right: 2px;

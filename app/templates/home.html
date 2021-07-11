@@ -1,209 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'home_layout.html' %}
 
-<head>
-  <meta charset="UTF-8">
-  <title>Welcome to website | @prateekclare</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+{% block homeContent %}
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
+<header class="container">
+  <div class="siteTitle typewrite" data-period="2000"
+    data-type='[ "Portfolio Website of", "Website Created & Deigned by" ]'>
+    <span class="wrap"></span>
+</header>
 
-  <!-- Favicoon -->
-  <link rel="shortcut icon" href="../static/images/pcp1logo.png" type="image/png">
+<center>
+  <article>
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <figure>
+      <figcaption class="monoton_font">
+        <strong style="font-weight: 200;">Prateek</strong>
+        Clare
+      </figcaption>
+      <img src='../static/images/Back3_homePic.png' alt='Woman holding guitar over shoulder'>
+      <img src="../static/images/iam1ge_portfolio-min.png" alt="" class="top">
 
-  <!-- Animation On Scroll -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </figure>
+  </article>
 
-  <!-- Js Links -->
-  <script src="../static/js/writtingeffect.js"></script>
-
-
-  <!-- Css -->
-  <link rel="stylesheet" href="../static/css/cards_style.css">
-
-  <link rel="stylesheet" href="../static/css/home_Style.css">
-
-</head>
-
-<body>
-  <!-- partial:index.partial.html -->
-  <header class="container">
-    <div class="siteTitle typewrite" data-period="2000" data-type='[ "Portfolio Website of", "Website Created & Deigned by" ]'>
-      <span class="wrap"></span>
-  </header>
-
-  <center>
-    <article>
-
-      <figure>
-        <figcaption class="monoton_font">
-          <strong style="font-weight: 200;">Prateek</strong>
-          Clare
-        </figcaption>
-        <img
-          src='../static/images/Back3_homePic.png'
-          alt='Woman holding guitar over shoulder'>
-        <img src="../static/images/iam1ge_portfolio-min.png" alt=""
-          class="top">
-
-      </figure>
-    </article>
-
-  </center>
-  <!-- 
+</center>
+<!-- 
   <center>
     <img src="../static/images/iam1ge_portfolio-min.png" width="350vw" alt="" class="myImage" id="hover">
   </center> -->
 
-  <!-- <hr> -->
-  </div>
+<!-- <hr> -->
+</div>
 
-  <center>
-    <div class="containerMain">
+<center>
+  <div class="containerMain">
 
-      <table class="table" style="text-align: center;">
+    <table class="table" style="text-align: center;">
 
 
-        <tr>
-          <th scope="row">
-            <a href="https://www.instagram.com/prateekclare/">
-              <i class="bi bi-instagram shadow-sm" style="font-size: 2rem; color: rgb(73, 3, 3);">
-              </i></a>
-          </th>
-          <!-- 
+      <tr>
+        <th scope="row">
+          <a href="https://www.instagram.com/prateekclare/">
+            <i class="bi bi-instagram shadow-sm" style="font-size: 2rem; color: rgb(73, 3, 3);">
+            </i></a>
+        </th>
+        <!-- 
         <th scope="row">
           <a href="https://www.freelancer.com/u/prateekclare6">
             <img width="45px" style="vertical-align: bottom;" src="https://camo.githubusercontent.com/c34d362e0e084f01b17fbef1b5332e97e40c75caceb85a1e705fbe5fdfe6d881/687474703a2f2f692e737461636b2e696d6775722e636f6d2f36774c69492e6a7067" alt="">
           </a>
         </th> -->
 
-          <th scope="row">
-            <a href="https://github.com/prateekclare">
-              <i class="bi bi-github" style="font-size: 2rem; color: black;">
-              </i></a>
-          </th>
+        <th scope="row">
+          <a href="https://github.com/prateekclare">
+            <i class="bi bi-github" style="font-size: 2rem; color: black;">
+            </i></a>
+        </th>
 
-          <th scope="row">
-            <a href="https://www.linkedin.com/in/prateek-clare-b6b17919b/">
-              <i class="bi bi-linkedin" style="font-size: 2rem; color: blue;">
-              </i></a>
-          </th>
+        <th scope="row">
+          <a href="https://www.linkedin.com/in/prateek-clare-b6b17919b/">
+            <i class="bi bi-linkedin" style="font-size: 2rem; color: blue;">
+            </i></a>
+        </th>
 
 
-          <th scope="row">
-            <a href="https://twitter.com/clareprateek">
-              <i class="bi bi-twitter" style="font-size: 2rem; color: cornflowerblue;"></i></a>
-          </th>
+        <th scope="row">
+          <a href="https://twitter.com/clareprateek">
+            <i class="bi bi-twitter" style="font-size: 2rem; color: cornflowerblue;"></i></a>
+        </th>
 
-          <th scope="row">
-            <a href="https://www.youtube.com/channel/UC5PDe5fXjQWCqszbP6zJYIQ">
-              <i class="bi bi-youtube" style="font-size: 2rem; color: red;"></i>
-            </a>
-          </th>
+        <th scope="row">
+          <a href="https://www.youtube.com/channel/UC5PDe5fXjQWCqszbP6zJYIQ">
+            <i class="bi bi-youtube" style="font-size: 2rem; color: red;"></i>
+          </a>
+        </th>
 
-          <th scope="row">
-            <a href="https://www.facebook.com/profile.php?id=100012408844491">
-              <i class="bi bi-facebook" style="font-size: 2rem; color: rgb(8, 0, 117);"></i>
-            </a>
-          </th>
+        <th scope="row">
+          <a href="https://www.facebook.com/profile.php?id=100012408844491">
+            <i class="bi bi-facebook" style="font-size: 2rem; color: rgb(8, 0, 117);"></i>
+          </a>
+        </th>
 
-        </tr>
+      </tr>
 
-      </table>
-      <div class="text-center">Do Follow On Social Media</div>
+    </table>
+    <div class="text-center">Do Follow On Social Media</div>
+  </div>
+</center>
+
+<br>
+<main>
+  <a href="{{url_for('about') }}" class="card" id="card1" data-aos="fade-right" data-aos-duration="3500">
+    <!-- data-aos="fade-right" data-aos-easing="ease-in-sine"       data-aos-duration="3000" -->
+    <div class="inner shadow2inn">
+      <h2 class="title">About Me</h2>
+      <time class="subtitle">Brief about me<time>
     </div>
-  </center>
+  </a>
 
-  <br>
-  <main>
-    <a href="{{url_for('about') }}" class="card" id="card1" data-aos="fade-right" data-aos-duration="3500">
-      <!-- data-aos="fade-right" data-aos-easing="ease-in-sine"       data-aos-duration="3000" -->
-      <div class="inner shadow2inn">
-        <h2 class="title">About Me</h2>
-        <time class="subtitle">Brief about me<time>
-      </div>
-    </a>
+  <a href="{{url_for('works') }}" class="card card2" id="card2" data-aos="zoom-in" data-aos-duration="1300">
+    <div class="inner shadow2inn">
+      <h2 class="title">My Works</h2>
+      <time class="subtitle">All projects are here<time>
+    </div>
+  </a>
 
-    <a href="{{url_for('works') }}" class="card card2" id="card2" data-aos="zoom-in" data-aos-duration="1300">
-      <div class="inner shadow2inn">
-        <h2 class="title">My Works</h2>
-        <time class="subtitle">All projects are here<time>
-      </div>
-    </a>
-
-    <a href="#" class="card card3" id="card3" data-aos="zoom-in" data-aos-duration="1300">
-      <div class="inner shadow2inn">
-        <h2 class="title text-danger">THIS PAGE IS NOT YET AVAILABLE
-          <hr>Contact Me
-        </h2>
+  <a href="" class="card card3" id="card3" data-aos="zoom-in" data-aos-duration="1300">
+    <div class="inner shadow2inn">
+      <h4>
         <time class="subtitle">Want any website/webpage?<time>
-      </div>
-    </a>
-    <main>
+      </h4>
+      <h3 class="title text-dark">
+        <hr>
+        Contact via
+        <br><i class="fa fa-instagram" aria-hidden="true"></i> prateekclare
+      </h3>
+    </div>
+  </a>
+  <main>
 
-      <!-- partial -->
 
-
-      <!-- Java Script -->
-      <script>
-        var button = document.getElementById('hover')
-
-        var card1 = document.getElementById('card1')
-        var card2 = document.getElementById('card2')
-        var card3 = document.getElementById('card3')
-
-        var body = document.body;
-
-        button.onmouseover = function () {
-          body.className = 'hovered';
-        }
-
-        card1.onmouseover = function () {
-          body.className = 'hovered_card1';
-        }
-
-        card2.onmouseover = function () {
-          body.className = 'hovered_card2';
-        }
-
-        button.onmouseout = function () {
-          body.className = '';
-        }
-
-        card1.onmouseout = function () {
-          body.className = '';
-        }
-
-        card2.onmouseout = function () {
-          body.className = '';
-        }
-
-      </script>
-      <!-- ++++++++++++++ Animation On Scroll +++++++++++++ -->
-
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
-      <!-- ++++++++++++++ End Animation On Scroll +++++++++++++ -->
-      <br>
-</body>
-<footer class="col-12 ">
-  {% extends 'includes/socialMd_box.html' %}
-
-</footer>
-
-</html>
+    {% endblock homeContent %}
